@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    alert("text() method show output is : "+$("div").text());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>text() Method</h1>
+        <div>
+            <p>
+                This will <b>only show the content(text)</b> but not the tags used. 
+            </p>
+        </div>
+        <button>Click</button>
+    </body>
+</html>
