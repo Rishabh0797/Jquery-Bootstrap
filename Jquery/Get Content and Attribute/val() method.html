@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#sub").click(function(){
+                    alert("val() method show output is : "+$("#demo1").val()+$("#demo2").val());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>val() Method</h1>
+        <p>This method will take value from input tag.</p>
+        <form>
+            <fieldset>
+                 <legend>This is some form :)</legend>
+                 <label for="demo1">Name:</label>
+                 <input type="text" id="demo1" value="Rishabh Bansal"><br><br>
+
+                 <label for="demo2">Phone Number:</label>
+                 <input id="demo2" type="number" maxlength="10" minlength="10" value="1010101010"><br><br>
+
+                 <input type="submit" id="sub">
+            </fieldset>
+        </form>
+    </body>
+</html>
