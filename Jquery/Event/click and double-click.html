@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#demo1").click(function(){
+                    $(this).css("background-color","yellow");
+                });
+                $("#demo2").dblclick(function(){
+                    $(this).css("background-color","red");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="demo1" style="background-color:cornflowerblue;height:50px;padding:20px">
+            <p>click to see change</p>
+        </div>
+
+        <br><br>
+
+        <div id="demo2" style="background-color:rgb(100, 237, 130);height:50px;padding:20px">
+            <p>Double-click to see change</p>
+        </div>
+    </body>
+</html>
