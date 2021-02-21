@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#demo1").mouseenter(function(){
+                     $(this).css("background-color","yellow");
+                      alert("You entered in first div");
+
+                   });
+                $("#demo2").mouseleave(function(){
+                    $(this).css("background-color","red");
+                    alert("You leave in second div");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="demo1" style="background-color:cornflowerblue;height:50px;padding:20px">
+            <p>mouseenter() method is used here.when you enter this html element you see change</p>
+        </div>
+
+        <br><br>
+
+        <div id="demo2" style="background-color:rgb(100, 237, 130);height:50px;padding:20px">
+            <p>mouseleave() method is used here. When you enter and leave this html element to see change</p>
+        </div>
+    </body>
+</html>
