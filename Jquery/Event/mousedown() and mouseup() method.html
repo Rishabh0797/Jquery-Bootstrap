@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#demo2").mousedown(function(){
+                     $(this).css("background-color","red");
+                });
+                $("#demo2").mouseup(function(){
+                    $(this).css("background-color","green");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>mousedown() method and mouseup() method</h1>
+        <div id="demo2" style="background-color:green;height:50px;padding:20px;margin-top:80px;">
+            <p>Just click and see the changes</p>
+        </div>
+
+    </body>
+</html>
