@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").on({
+                    mouseenter:function(){
+                      $(this).css("background-color","red");
+                     },
+
+                    mouseleave:function(){
+                     $(this).css("background-color","green");
+                    },
+                    click:function(){
+                        $(this).addClass("c1");
+                    }
+                });
+            });
+        </script>
+        <style>
+            .c1{
+                font-size:200%;
+                border:2px solid black;
+                height:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>on() method</h1>
+        <div id="demo2" style="background-color:green;padding:20px;margin-top:80px;">
+            <p>Just click and see the changes</p>
+        </div>
+
+    </body>
+</html>
