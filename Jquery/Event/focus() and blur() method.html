@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#demo1,#demo2").focus(function(){
+                   $(this).css("background-color","yellow");
+               });
+               $("#demo1,#demo2").blur(function(){
+                   $(this).css("background-color","cyan");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>focus() and blur() method </h1>
+        <form>
+            <fieldset>
+                <legend>Personal info</legend>
+                <label for="demo1">Name:</label>
+                <input type="text" id="demo1"><br><br>
+                <label for="demo2">Age:</label>
+                <input type="number" id="demo2" minlength="1">
+            </fieldset>
+        </form>
+        <br><br>
+        <p><b>focus() method</b> id executed when you select the input area and <b>blur() method</b> is executed when you leave input field.</p>
+    </body>
+</html>
