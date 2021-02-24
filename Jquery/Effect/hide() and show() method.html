@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#b1").click(function(){
+                   $("div").hide(1000);
+               });
+               $("#b2").click(function(){
+                   $("div").show(1000);
+               });
+               $("#b3").click(function(){
+                   $("div").toggle(1000);
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>hide(), show() and toggle() method</h1>
+        <div id="demo2" style="background-color:green;padding:20px;margin-top:80px;">
+            <p>This is some text.</p>
+        </div>
+        <br><br>
+        <button id="b1">Hide</button>
+        <button id="b2">Show</button>
+        <button id="b3">Toggle</button>
+        <br><br><br><br>
+        <p><b>hide()</b> method is used to hide content.</p>
+        <p><b>show()</b> method is used to show content.</p>
+        <p><b>toggle()</b> method is used to hide content and show content both.</p>
+    </body>
+</html>
