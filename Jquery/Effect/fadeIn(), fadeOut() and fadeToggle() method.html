@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#b1").click(function(){
+                   $("#demo1").fadeIn("fast");
+                   $("#demo2").fadeIn();
+                   $("#demo3").fadeIn("slow");
+               });
+               $("#b2").click(function(){
+                   $("#demo1").fadeOut(1000);
+                   $("#demo2").fadeOut("slow");
+                   $("#demo3").fadeOut();
+               });
+               $("#b3").click(function(){
+                   $("#demo3").fadeToggle();
+                   $("#demo1").fadeToggle(1000);
+                   $("#demo2").fadeToggle("slow");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>fadeOut(), fadeIn() and fadeToggle() method</h1>
+        <div id="demo1" style="background-color:green;padding:20px;margin-top:80px;">
+            <p>This is some text.</p>
+        </div>
+        <div id="demo2" style="background-color:rgb(13, 0, 128);padding:20px;margin-top:80px;">
+            <p>This is some text.</p>
+        </div>
+        <div id="demo3" style="background-color:rgb(128, 19, 0);padding:20px;margin-top:80px;">
+            <p>This is some text.</p>
+        </div>
+        <br><br>
+        <button id="b2">fadeOut</button>
+        <button id="b1">fadeIn</button>
+        <button id="b3">fadeToggle</button>
+        <br><br><br><br>
+        <p><b>fadeOut()</b> method is used to fade content.</p>
+        <p><b>fadeIn()</b> method is used to fade in hidden content.</p>
+        <p><b>fadeToggle()</b> method is used to hide content and show content both.</p>
+    </body>
+</html>
