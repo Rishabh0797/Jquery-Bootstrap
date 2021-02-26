@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#b1").click(function(){
+                  $("div").slideDown("slow");
+                });
+                $("#b2").click(function(){
+                  $("div").slideUp(3000);
+                });
+                $("#b3").click(function(){
+                  $("div").slideToggle("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>slideUp(), slideDown() and slideToggle() method</h1>
+        <div id="demo1" style="background-color:green;padding:20px;margin-top:80px;">
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+        </div>
+        <br><br>
+        <button id="b2">slideUp</button>
+        <button id="b1">slideDown</button>
+        <button id="b3">slideToggle</button>
+        <br><br><br><br>
+        <p><b>slideUp()</b> method is used to silde up(hide) content.</p>
+        <p><b>slideDown()</b> method is used to slide down(show) content.</p>
+        <p><b>slideToggle()</b> method is used to silde up(hide) and slide down(show) content both.</p>
+    </body>
+</html>
