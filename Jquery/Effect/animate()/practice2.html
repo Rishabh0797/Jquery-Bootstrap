@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#demo1").animate({
+                        left: '500px',
+                        fontSize: '+=10px',
+                        padding: '+=10px',
+                        height:'+=150px' ,
+                        width: '+=150px'     }, "slow");
+                      
+                        $("#demo1").animate({ height: 'hide'}, "slow");
+                        $("#demo1").animate({  height: 'show'}, "slow");
+                        $("#demo1").animate({ width: 'hide'}, "slow");
+                        $("#demo1").animate({ width: 'show'}, "slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="demo1" style="background-color:yellowgreen;height: 60px;padding:30px;width:10%;position:relative;">
+            <p>
+                This is some text.
+            </p>
+        </div>
+        <br><br>
+        <button>Click ME</button>
+    </body>
+
