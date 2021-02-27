@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var d =$("#demo1");
+                    d.animate({height: '200px',opacity: '0.4'}, "slow");
+                    d.animate({width: '200px',opacity: '0.9'}, "slow");
+                    d.animate({height: '-=150px',opacity: '0.4'}, "slow");
+                    d.animate({width: '-=60px',opacity: '0.9'}, "slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="demo1" style="background-color:yellowgreen;height: 60px;padding:30px;width:10%;position:relative;">
+            <p>
+                This is some text.
+            </p>
+        </div>
+        <br><br>
+        <button>Click ME</button>
+    </body>
+
