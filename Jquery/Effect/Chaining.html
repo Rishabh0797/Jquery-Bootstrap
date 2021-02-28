@@ -1,0 +1,20 @@
+
+<html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+          $("button").click(function(){
+           $("#div1").fadeIn("slow").slideUp(1000).slideDown(2000).animate({left: '250px'}).animate({height: '+=50',width: '+=50'}, "slow").toggle(2000).show("slow");
+            });
+         });
+     </script>
+     
+ </head>
+ <body>
+
+       <button>click</button><br><br>
+
+      <div id="div1" style="width:80px;height:80px;display:none;background-color:red;position: relative;"></div><br><br>
+ </body>
+</html>
