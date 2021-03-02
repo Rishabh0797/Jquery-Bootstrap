@@ -1,0 +1,30 @@
+<html>
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script>
+           $(document).ready(function(){
+               $("div").children().css({"color":"red","border": "2px solid red"});
+           });
+       </script>
+       <style>
+           .c1 * {
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }
+       </style>
+    </head>
+    <body>
+         <div class="c1" style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)
+              <li>li (direct parent)
+                <span>span</span>
+              </li>
+            </ul>
+          </div>
+          <br><br>
+          <p><b>children() method</b> returns the direct children element of the selected element.</p>
+    </body>
+</html>
