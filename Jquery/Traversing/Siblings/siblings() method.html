@@ -1,0 +1,30 @@
+<html>
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script>
+           $(document).ready(function(){
+            $("#s2").siblings().css({"color":"red","border": "2px solid red" });
+           });
+       </script>
+       <style>
+           .c1 * {
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }
+       </style>
+    </head>
+    <body>
+      <div class=" siblings" id="demo3">div (parent)
+        <p>p</p>
+        <span id="s2">span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+      </div>
+          <br><br>
+          <p><b>siblings() method</b> returns all the siblings elements of the selected element.</p>
+    </body>
+</html>
