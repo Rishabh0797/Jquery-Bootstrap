@@ -1,0 +1,34 @@
+<html>
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script>
+           $(document).ready(function(){
+                $("button").click(function(){
+                     var txt="Width is : "+$("div").width()+"<br>"+"Height is : "+$("div").height();
+                     $("div").html(txt);
+                });
+           });
+       </script>
+       <style>
+           .c1{
+               height:300px;
+               width:300px;
+               padding:20px;
+               margin:20px;
+               border:1px solid blue;
+               background-color:chartreuse;
+           }
+       </style>
+    </head>
+    <body>
+        <div class ="c1">
+        </div>
+        <br><br>
+        <button>click</button>
+        <br>
+        <p><b>width()</b> method return element width</p>
+        <br>
+        <p><b>height()</b> method return element height</p>
+    </body>
+</html>    
+ 
