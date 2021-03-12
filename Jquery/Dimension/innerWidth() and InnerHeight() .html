@@ -1,0 +1,35 @@
+<html>
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script>
+           $(document).ready(function(){
+                $("button").click(function(){
+                     var txt="Width is : "+$("div").width()+"<br>"+"Height is : "+$("div").height();
+                     var txt1="<br>innerWidth is : "+$("div").innerWidth()+"<br>"+"innerHeight is : "+$("div").innerHeight();
+                     $("div").html(txt+" "+txt1);
+                });
+           });
+       </script>
+       <style>
+           .c1{
+               height:300px;
+               width:300px;
+               padding:20px;
+               margin:20px;
+               border:1px solid blue;
+               background-color:chartreuse;
+           }
+       </style>
+    </head>
+    <body>
+        <div class ="c1">
+        </div>
+        <br><br>
+        <button>click</button>
+        <br><br>
+        <p><b>innerWidth()</b> method return element width including padding</p>
+        
+        <p><b>InnerHeight()</b> method return element height including padding</p>
+    </body>
+</html>    
+ 
